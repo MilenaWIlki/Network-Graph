@@ -1,0 +1,14 @@
+import networkx as nx
+import matplotlib.pyplot as plt
+
+# Create a graph
+G = nx.Graph()
+G.add_edge('A', 'B')
+G.add_edge('B', 'C')
+G.add_edge('C', 'D')
+G.add_edge('D', 'A')
+
+# Draw the graph
+nx.draw(G, with_labels=True, node_color='skyblue', node_size=1500, font_size=15, font_weight='bold')
+plt.title('Network Graph')
+plt.show()
